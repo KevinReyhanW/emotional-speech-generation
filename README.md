@@ -60,10 +60,3 @@ Notes on error handling
 - Empty text: the script will print an error and exit with a non-zero status.
 - Invalid output path: the script will attempt to create parent directories. If it cannot, it prints an error and exits.
 
-
-If you want better emotional control
-- For realistic emotional speech, use a neural expressive TTS model (Coqui TTS, YourTTS, VITS, or Hugging Face SpeechT5) and fine-tune or use model-provided style/emotion tokens. These require more disk space, GPU for best performance, and sometimes an older Python version.
-- If you want improved pitch control locally (without neural models), I can add `librosa`-based pitch shifting (better than simple resampling) — it will increase dependencies.
-
-Contact / next steps
-- Tell me if you want me to add true pitch shifting via `librosa` or attempt a Coqui/HuggingFace setup (I will outline exact dependency steps and compatibility notes).
